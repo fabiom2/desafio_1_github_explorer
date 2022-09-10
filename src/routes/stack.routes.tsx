@@ -15,8 +15,8 @@ const AppRoutes: React.FC = () => (
       cardStyle: {
         backgroundColor: theme.colors.gray_50
       },
-      header: ({ navigation }) => {
-        if (navigation.canGoBack()) {
+      header: ({ previous, navigation }) => {
+        if (previous) {
           return <Header goBack={navigation.goBack} />
         }
         return <Header />

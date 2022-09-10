@@ -1,7 +1,6 @@
-import { ImageBackground } from 'react-native';
 import styled from 'styled-components/native';
 
-export const Container = styled(ImageBackground).attrs({
+export const Container = styled.ImageBackground.attrs({
   imageStyle: {
     top: '-47%'
   },
